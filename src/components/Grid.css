@@ -1,0 +1,10 @@
+.gridDiv {
+  border: 2px solid var(--oxfordBlue);
+  margin: 5vh auto;
+  position: relative;
+
+  width: calc(80vw + 2px);
+  height: calc(40vw + 2px);
+
+  transition: margin 150ms ease-in-out;
+}

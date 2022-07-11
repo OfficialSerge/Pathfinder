@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1vmax;
+  color: var(--oxfordBlue);
+}
+
+nav {
+  padding: 1vh 3vw;
+  padding-bottom: 0;
+  background: var(--oxfordBlue);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p {
+  margin-right: auto;
+  color: var(--boneColor);
+}
+
+.start, .end {
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+  width: 4vw;
+  padding: 0.5rem;
+  cursor: default;
+}
+
+.start {
+  background-color: var(--boneColor);
+  border: 2px solid var(--teal);
+  color: var(--teal);
+}
+
+.end {
+  background-color: var(--boneColor);
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
+.start:active, .end:active {
+  transform: scale(0.90)
+}
+
+.dropdown {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0.5vw;
+  padding: 0;
+  position: relative;
+}
+
+.selector {
+  background-color: var(--boneColor);
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  border: none;
+  width: 10.5vw;
+  z-index: 2;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transform: translateY(-15px);
+}
+
+.dropdownMenu:hover,
+.selector:hover + .dropdownMenu {
+  opacity: 1;
+  transform: translateY(-8px);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.dropdownMenu li {
+  padding: 0.75rem;  
+  background-color: var(--boneColor);
+  border-top: 2px inset rgba(0,0,0,0.25);
+  transition: all 0.2s;
+}
+
+.dropdownMenu li:last-child {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  padding-bottom: calc(0.75rem + 2px);
+}
+
+.dropdownMenu li:hover {
+  background-color: var(--oxfordBlue);
+  color: var(--boneColor);
+  cursor: default;
+}
+
+.basicButton {
+  background-color: var(--boneColor);
+  padding: 0.75rem;
+  margin: 0.5vw;
+  width: 5vw;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.basicButton:hover {
+  opacity: 0.85;
+}
+
+.basicButton:active {
+  scale: 0.97;
+}

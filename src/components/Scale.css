@@ -1,0 +1,58 @@
+.scale {
+  margin: 0.5vw;
+  padding: 0;
+  width: 7.5vw;
+
+  background-color: var(--boneColor);
+  border-radius: 5px;
+  border: none;
+  
+  display: flex;
+}
+
+.scale p {
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  color: var(--oxfordBlue);
+  margin: 0;
+}
+
+.arrowGroup {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 2vw;
+}
+
+.arrowUp, .arrowDown {
+  background-color: var(--boneColor);
+  border: 1px solid rgba(39, 54, 84, 0.25);
+  height: 100%;
+  width: 100%;
+}
+
+.arrowUp:active, .arrowDown:active {
+  opacity: 0.5;
+}
+
+.arrowUp {
+  border-top-right-radius: 5px;
+}
+
+.arrowDown {
+  border-bottom-right-radius: 5px;
+}
+
+.arrowN, .arrowS {
+  position: relative;
+  clip-path: polygon(85% 0, 70% 50%, 85% 100%, 15% 50%);
+  background: var(--oxfordBlue);
+  height: 100%;
+  width: 100%;
+}
+.arrowN {
+  transform: rotate(90deg);
+}
+
+.arrowS {
+  transform: rotate(-90deg);
+}
