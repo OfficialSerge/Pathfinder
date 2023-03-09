@@ -1,5 +1,16 @@
-# Pathfinder
+# Pathfinding + Simulate Traffic!
 
-Website hosted on github pages at https://OfficialSerge.github.io/Pathfinder
+[Project Link](https://OfficialSerge.github.io/Pathfinder)
 
-Navigate mazes, cities, and circles, toggle on and off traffic, and explore 5 different graph algorithms and how they guide you from start to finish!
+## Tech Stack
+
+- JavaScript
+- React 
+- HTML/CSS
+
+## Features
+
+- Makes use of Min-Indexed Priority Queues to explore most promising nodes first.
+- Procedurally generated Perlin Noise allows us to simulate traffic for the algorithms.
+- Toggle between several layouts and generate mazes live on the spot.
+- Dijkstra's, A-Star, BSF, DFS, Best First Search.
